@@ -1,0 +1,67 @@
+.footer {
+    padding: 5rem 9%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../../img/dalat-5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &__container {
+        width: 100%;
+        margin-right: 2rem;
+    }
+    &__list {
+        display: inline-block;
+        list-style: none;
+    }
+    &__item {
+        padding: 1rem 0;
+    }
+    &__icon-svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: var(--color-primary);
+        margin-right: 1rem;
+        transition: all .3s;
+        // &:hover {
+        //     margin-right: 2rem;
+        // }
+
+    }
+    &__link {
+        margin-left: 1rem;
+        font-size: var(--font-small);
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        color: var(--color-white);
+        transition: all .3s;
+
+        &:hover {
+            color: var(--color-primary);
+        }
+
+        &:hover .icon-text {
+            // margin-left: 1rem;
+            transform: translateX(1rem);
+            color: var(--color-primary);
+            fill: var(--color-primary);
+        }
+    
+    }
+    .icon-text {
+       transition: all .4s;
+    }
+    // &__link:hover &__icon-svg {
+    //     transform: translateX(0);
+    // }
+    // &__link:hover {
+    //     transform: translateX(2rem);
+    //     color: var(--color-primary);
+    //     fill: var(--color-primary);
+    // }
+}

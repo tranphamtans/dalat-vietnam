@@ -1,0 +1,161 @@
+.header {
+    height: 100vh;
+    padding: 0 9%;
+    position: relative;
+    background-image:  url(../../../img/header-3.jpg);
+    background-size: 100% !important;
+    background-position: center !important;
+    margin-bottom: 5rem;
+
+    &__with {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__text {
+        display: inline-block;
+    }
+    &__heading-primary {
+        font-size: var(--font-custom-2);
+        color: var(--color-primary);
+        text-transform: uppercase;
+    }
+    
+    &__panagrap {
+        width: 48rem;
+        margin-bottom: 3rem;
+    }
+    &__btn-next,
+    &__btn-prev {
+        position: absolute;
+        border: none;
+        width: 2.5rem;
+        font-size: 4rem;
+        padding: 2rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    &__btn-next {
+        top: 50%;
+        right: 0;
+    }
+    &__btn-prev {
+        top: 50%;
+        left: 0;
+    }
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+   
+    &__logo {
+        width: 8rem;
+        height: 100%;
+        // logo loi chua sua
+        // margin-left: -3rem;
+        // margin-top: -3rem;
+    }
+    &__list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        margin-left: 2rem;
+    }
+    &__link {
+        color: var(--color-black);
+        transition: all .3s;
+        &:hover {
+            color: var(--color-primary);
+        }
+    }
+    &__icon-notification{
+        width: 2rem;
+        height: 2rem;
+        margin-left: 2rem;
+        transition: all .3s;
+        &:hover {
+            fill: var(--color-primary);
+        }
+    }
+    &__icon-search {
+        width: 2rem;
+        height: 2rem;
+        margin-left: 2rem;
+        transition: all .3s;
+        &:hover {
+            fill: var(--color-primary);
+        }
+    }
+
+}
+.box__logo {
+    display: flex;
+    align-items: baseline;
+    &-icon {
+        width: 2rem;
+        height: 2rem;
+        fill: var(--color-primary);
+        margin-right: 1rem;
+    }
+    &-text {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+}
+.sticky {
+    position: fixed;
+    height: 9rem;
+    width: 82%;
+    padding: 0 3rem;
+    z-index: 8;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 .5rem 2.5rem rgba($color-back, .3);
+}
+
+// icon-seach
+.seach {
+    width: 40%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 2rem 3rem;
+    transition: opacity 3s;
+    opacity: 0;
+    z-index: -1;
+    &__heading {
+        margin-bottom: 3rem;
+        font-size: 3rem;
+        font-weight: 400;
+        color: #fff;
+    }
+    &__box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__input {
+        width: 80%;
+        padding: 1.2rem 2rem;
+        font-size: var(--font-default);
+        border: none;
+        outline: none;
+        border-radius: .5rem;
+        box-shadow: 0 2rem 4rem rgba($color-white, .3);
+    }
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+        transform: translateX(-4rem);
+        transition: all .3s;
+        &:hover {
+            fill: var(--color-primary);
+        }
+    }
+}

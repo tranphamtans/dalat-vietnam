@@ -1,0 +1,34 @@
+.section-experience {
+    padding: 5rem 9%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-grey-light);
+    .image {
+       width: 50%;
+       img {
+           height: 30rem;
+           object-fit: cover;
+       }
+    }
+    &__photo {
+        width: 90%;
+        box-shadow: 2rem 2rem 0 rgba($color: #000000, $alpha: .2);
+    }
+    .content {
+        width: 50%;
+        font-size: var(--font-small);
+    }
+    &__heading {
+        font-size: 3rem;
+        font-weight: 600;
+        color: var(--color-primary);
+    }
+    &__panagrap-1 {
+        padding: 1rem 0;
+    }
+    &__panagrap-2 {
+        padding: 1rem 0;
+    }
+
+}
