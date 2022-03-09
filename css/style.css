@@ -53,6 +53,13 @@ body {
       background-color: var(--color-white);
       color: var(--color-primary); }
 
+.section {
+  transition: transform 1s , opacity 1s; }
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem); }
+
 .heading-primary {
   font-size: var(--font-custom-1);
   font-weight: 600;
