@@ -8,7 +8,7 @@
       border-radius: 3px;
     }
     &__shape {
-        width: 30rem;
+        // width: 30rem;
         height: 35rem;
         position: relative;
         margin-bottom: 2rem;
@@ -27,7 +27,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(30%, -40%);
+        transform: translate(25%, -40%);
         color: var(--color-white);
         font-size: var(--font-small);
         text-align: left;
@@ -44,7 +44,7 @@
         padding: 2rem;
         &:hover .section-city__caption {
             opacity: 1;
-            transform: translate(-70%, -40%);
+            transform: translate(-60%, -40%);
         }
         &:hover .section-city__photo {
             filter: blur(4px) brightness(60%);

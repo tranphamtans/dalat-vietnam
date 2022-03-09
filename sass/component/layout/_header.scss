@@ -1,9 +1,9 @@
 .header {
     height: 100vh;
+    width: 100%;
     padding: 0 9%;
-    position: relative;
     background-image:  url(../../../img/header-3.jpg);
-    background-size: 100% !important;
+    background-size: cover !important;
     background-position: center !important;
     margin-bottom: 5rem;
 
@@ -25,24 +25,13 @@
         width: 48rem;
         margin-bottom: 3rem;
     }
-    &__btn-next,
-    &__btn-prev {
-        position: absolute;
-        border: none;
-        width: 2.5rem;
-        font-size: 4rem;
-        padding: 2rem;
-        background-color: transparent;
-        cursor: pointer;
-    }
-    &__btn-next {
-        top: 50%;
-        right: 0;
-    }
-    &__btn-prev {
-        top: 50%;
-        left: 0;
-    }
+    // &__title {
+    //     display: inline-block;
+    //     font-size: 6rem;
+    //     background: -webkit-linear-gradient($color-primary-light, $color-primary-drak);
+    //     -webkit-background-clip: text;
+    //     -webkit-text-fill-color: transparent;
+    // }
 }
 .nav {
     display: flex;
@@ -50,13 +39,6 @@
     align-items: center;
     padding-top: 2rem;
    
-    &__logo {
-        width: 8rem;
-        height: 100%;
-        // logo loi chua sua
-        // margin-left: -3rem;
-        // margin-top: -3rem;
-    }
     &__list {
         list-style: none;
         display: flex;
@@ -86,6 +68,7 @@
         height: 2rem;
         margin-left: 2rem;
         transition: all .3s;
+        cursor: pointer;
         &:hover {
             fill: var(--color-primary);
         }
@@ -95,6 +78,7 @@
 .box__logo {
     display: flex;
     align-items: baseline;
+    cursor: pointer;
     &-icon {
         width: 2rem;
         height: 2rem;

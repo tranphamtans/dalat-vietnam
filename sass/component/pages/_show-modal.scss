@@ -37,6 +37,7 @@ body {
         right: 3rem;
         color: var(--black);
         transition: all .1s;
+        cursor: pointer;
 
         &:hover {
             color: var(--color-primary);
