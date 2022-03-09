@@ -7,8 +7,6 @@ const section1 = document.querySelector("#section--1");
 const section2 = document.querySelector("#section--2");
 const btnHeader = document.querySelector(".btn--scroll-hd");
 const nav = document.querySelector(".nav");
-const btnNext = document.querySelector(".header__btn-next");
-const btnPrev = document.querySelector(".header__btn-prev");
 const slideImg = document.querySelectorAll(".slide");
 const lightNext = document.querySelector(".btn-next");
 const lightPrev = document.querySelector(".btn-prev");
@@ -47,6 +45,10 @@ btnClose.addEventListener("click", () => modalShow("close"));
 // seach
 iconSeach.addEventListener("click", () => modalShow("seach-open"));
 overlay.addEventListener("click", () => modalShow("close"));
+document.addEventListener("keyup", (e) => {
+    if (e.key === "Enter") modalShow("close");
+    if (e.key === "Escape") modalShow("close");
+});
 
 // scroll
 const header = document.querySelector(".header");
@@ -75,7 +77,7 @@ document.querySelector(".nav__list").addEventListener("click", function (e) {
         document.querySelector(id).scrollIntoView({ behavior: "smooth" });
     }
 });
-// scroll footer
+
 document.querySelectorAll(".box__list").forEach(function (cur) {
     cur.addEventListener("click", function (e) {
         e.preventDefault();
@@ -157,6 +159,12 @@ const runSlide = function () {
             gotoslide(img);
             activeDots(img);
         }
+    });
+    document.addEventListener("keyup", (e) => {
+        console.log(e.key);
+        if (e.key === "ArrowRight") lightBoxNext();
+        if (e.key === "ArrowLeft") lightBoxPrev();
+        if (e.key === "Escape") modalShow("close");
     });
     createDots();
 };
