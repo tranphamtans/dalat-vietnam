@@ -163,5 +163,6 @@ const runSlide = function () {
         }
     });
     createDots();
+    console.log("da chay tren git");
 };
 runSlide();
