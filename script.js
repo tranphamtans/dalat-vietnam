@@ -51,10 +51,8 @@ overlay.addEventListener("click", () => modalShow("close"));
 // scroll
 const header = document.querySelector(".header");
 const navHeight = nav.getBoundingClientRect().height;
-console.log(navHeight);
 const navFixed = function (scroll) {
     const [entry] = scroll;
-    console.log(entry);
     if (!entry.isIntersecting) nav.classList.add("sticky");
     else nav.classList.remove("sticky");
 };
@@ -84,7 +82,6 @@ document.querySelectorAll(".box__list").forEach(function (cur) {
         if (e.target.classList.contains("box__link")) {
             const id = e.target.getAttribute("href");
             document.querySelector(id).scrollIntoView({ behavior: "smooth" });
-            console.log(id);
         }
     });
 });
@@ -95,7 +92,6 @@ const checkSuccess = function () {
     if (boxS === false)
         return setTimeout(() => (boxSuccess.style.transform = `translateX(120%)`), 1000);
 };
-
 btnBuy.forEach((cur) =>
     cur.addEventListener("click", function (e) {
         boxSuccess.style.transform = `translateX(0)`;
@@ -163,6 +159,5 @@ const runSlide = function () {
         }
     });
     createDots();
-    console.log("da chay tren git");
 };
 runSlide();
